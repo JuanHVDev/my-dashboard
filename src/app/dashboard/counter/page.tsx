@@ -1,4 +1,4 @@
-import CartCounter from "@/app/components/CartCounter";
+import CartCounter from "@/components/CartCounter";
 
 export default function CounterPage()
 {
