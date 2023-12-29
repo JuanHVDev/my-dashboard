@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useEffect, useState } from 'react'
-import { PokemonGrid } from '..'
+import { PokemonGrid, SimplePokemon } from '..'
 import { useAppSelector } from '@/store'
 import { IoHeartOutline } from 'react-icons/io5'
 
@@ -18,7 +18,7 @@ export const FavoritePokemons = () =>
 
   return (
     <>
-      {favoritos.length === 0 ? (<NoFavorites />) : (<PokemonGrid pokemons={favoritos} />)}
+      {favoritos.length === 0 ? (<NoFavorites />) : (<PokemonGrid pokemons={favoritos as SimplePokemon[]} />)}
     </>
   )
 }
