@@ -1,4 +1,5 @@
-import { PokemonGrid, PokemonsResponse, SimplePokemon } from "@/app/pokemons/index";
+import { PokemonGrid, PokemonsResponse, SimplePokemon, FavoritePokemons } from "@/app/pokemons/index";
+import { IoHeartOutline } from "react-icons/io5";
 
 const getPokemons = async (limit = 20, offset = 0): Promise<SimplePokemon[]> =>
 {
@@ -13,10 +14,11 @@ const getPokemons = async (limit = 20, offset = 0): Promise<SimplePokemon[]> =>
 
 export default async function PokemonsPage()
 {
+
   return (
     <div className="flex flex-col">
       <span className="text-5xl my-2">Listado de Pokémons <small>estático</small></span>
-      <PokemonGrid pokemons={[]} />
+      <FavoritePokemons />
     </div>
   );
 }
