@@ -24,7 +24,7 @@ export const FavoritePokemons = () =>
 }
 
 
-export const NoFavorites = () =>
+const NoFavorites = () =>
 {
   return (
     <div className="flex flex-col h-[50vh] items-center justify-center">
